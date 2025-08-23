@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danker's Skyblock Mod - Enhance Your Skyblock Experience</title>
+    <meta name="description" content="The ultimate enhancement for your Hypixel Skyblock experience. Advanced overlays, quality of life improvements, and shader compatibility.">
     <style>
         * {
             margin: 0;
@@ -96,6 +97,7 @@
             left: 50%;
             transform: translateX(-50%);
             animation: bounce 2s infinite;
+            cursor: pointer;
         }
 
         @keyframes bounce {
@@ -404,8 +406,8 @@
         <div class="download-section">
             <h2 style="font-size: 2.5rem; margin-bottom: 1rem; position: relative; z-index: 1;">Ready to Transform Your Skyblock Experience?</h2>
             <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; position: relative; z-index: 1;">Join thousands of players who have enhanced their gameplay with DSM Skyblock Mod</p>
-            <a href="#" class="download-button" onclick="downloadMod()">
-                📥 Download Danker's Skyblock Mod v2.3.1
+            <a href="https://github.com/boswer-000o/DankersSkyblockMod.github.io/releases/download/v2.3.1/Dankers.Skyblock.Mod-2.3.1.jar" class="download-button" onclick="trackDownload()">
+                🔥 Download Danker's Skyblock Mod v2.3.1
             </a>
             <p style="margin-top: 1rem; opacity: 0.7; position: relative; z-index: 1;">Compatible with Minecraft 1.8.9 Only | Requires Forge</p>
         </div>
@@ -469,30 +471,10 @@
             parallax.style.transform = `translateY(${speed}px)`;
         });
 
-        // Download function
-        function downloadMod() {
-            // Direct download link to the JAR file
-            const link = document.createElement('a');
-            link.href = 'DSM-2.3.1.jar';
-            link.download = 'Dankers.Skyblock.Mod-2.3.1.jar';
-            
-            // Show download started message
-            const button = document.querySelector('.download-button');
-            const originalText = button.innerHTML;
-            button.innerHTML = '⬇️ Download Starting...';
-            button.style.pointerEvents = 'none';
-            
-            setTimeout(() => {
-                button.innerHTML = originalText;
-                button.style.pointerEvents = 'auto';
-                // Remove the alert if you don't want the popup
-                // alert('Download started! Check your downloads folder.\n\nIf the download didn\'t start automatically, please contact support.');
-            }, 2000);
-            
-            // Trigger download (you'll need to replace the href with actual download URL)
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+        // Track download (optional analytics)
+        function trackDownload() {
+            console.log('Download initiated for Danker\'s Skyblock Mod v2.3.1');
+            // Add analytics tracking here if needed
         }
 
         // Add animation on scroll for feature cards
