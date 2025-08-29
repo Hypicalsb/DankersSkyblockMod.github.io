@@ -3,37 +3,84 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Danker’s Skyblock Mod (DSM) — Download & Install for Hypixel Skyblock (Minecraft 1.8.9)</title>
-  <meta name="description" content="Download Danker’s Skyblock Mod (DSM) for Minecraft 1.8.9. Easy install guide, features, and FAQs for Hypixel Skyblock players." />
+  <title>Danker’s Skyblock Mod (DSM) — Hypixel Skyblock Mod for Minecraft 1.8.9</title>
+  <meta name="description" content="Download and install Danker’s Skyblock Mod (DSM) for Minecraft 1.8.9. Guides, changelog, and FAQs for Hypixel Skyblock players." />
   <link rel="canonical" href="https://hypicalsb.github.io/DankersSkyblockMod.github.io/" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="author" content="DSM Team" />
-  <meta name="keywords" content="Danker’s Skyblock Mod, DSM, Hypixel Skyblock mod, Minecraft 1.8.9 Forge mod, DSM download, Hypixel mod" />
+  <meta name="robots" content="index, follow" />
   <link rel="icon" href="assets/favicon.ico" />
-  <link rel="alternate" href="https://hypicalsb.github.io/DankersSkyblockMod.github.io/" hreflang="en" />
+
+  <style>
+    body { margin:0; font-family:system-ui,sans-serif; background:#0f1419; color:#fff; line-height:1.6;}
+    header { background:#1a2332; padding:1rem;}
+    nav ul { display:flex; gap:1rem; list-style:none; margin:0; padding:0; justify-content:center;}
+    nav a { color:#9ae6b4; text-decoration:none; font-weight:600;}
+    nav a:hover { text-decoration:underline;}
+    .hero { text-align:center; padding:4rem 1rem; background:linear-gradient(135deg,#1a2332,#2d3748);}
+    .hero h1 { font-size:2.5rem; color:#4ecdc4;}
+    .hero p { max-width:600px; margin:1rem auto;}
+    .cta a { display:inline-block; margin:1rem; padding:0.75rem 1.25rem; background:#4ecdc4; color:#111; border-radius:999px; font-weight:700; text-decoration:none;}
+    .section { padding:3rem 1rem; max-width:1000px; margin:auto;}
+    .grid { display:grid; gap:1.25rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+    .card { background:#1a2332; padding:1rem; border-radius:12px;}
+    h2 { color:#ff6b6b; text-align:center; margin-bottom:1rem;}
+    footer { text-align:center; padding:2rem 1rem; border-top:1px solid rgba(255,255,255,.1); opacity:.75;}
+  </style>
 </head>
 <body>
   <header>
     <nav>
       <ul>
         <li><a href="#features">Features</a></li>
-        <li><a href="#install">Install</a></li>
+        <li><a href="#install">Quick Install</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="guides/install-1-8-9.html">Install Guide</a></li>
+        <li><a href="guides/install-1-8-9.html">Full Install Guide</a></li>
         <li><a href="changelog.html">Changelog</a></li>
         <li><a href="#download">Download</a></li>
       </ul>
     </nav>
   </header>
-  <main>
+
+  <section class="hero" id="top">
     <h1>Danker’s Skyblock Mod (DSM)</h1>
-    <p>Official DSM landing page. Download and install instructions for Hypixel Skyblock (Minecraft 1.8.9).</p>
-    <section id="download">
-      <a href="DSM-2.3.1.jar" download>Download DSM v2.3.1</a>
-    </section>
-  </main>
+    <p>The go-to Hypixel Skyblock utility for Minecraft 1.8.9. Clean overlays, QoL helpers, and a fast, lightweight client experience.</p>
+    <div class="cta" id="download">
+      <a href="DSM-2.3.1.jar" download>📥 Download DSM v2.3.1</a>
+      <a href="guides/install-1-8-9.html">📘 Install Guide</a>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="card"><h3>Performance</h3><p>Optimized to keep FPS high.</p></div>
+      <div class="card"><h3>HUD Overlays</h3><p>Configurable timers and trackers.</p></div>
+      <div class="card"><h3>QoL Tools</h3><p>Inventory helpers, auction & bazaar tools.</p></div>
+      <div class="card"><h3>Forge 1.8.9</h3><p>Built for Minecraft 1.8.9 Forge baseline.</p></div>
+      <div class="card"><h3>Active Updates</h3><p>Regular fixes and improvements.</p></div>
+      <div class="card"><h3>Community-first</h3><p>Trusted by thousands of Skyblock players.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="install">
+    <h2>Quick Install</h2>
+    <ol>
+      <li>Install Forge 1.8.9</li>
+      <li>Drop <code>DSM-2.3.1.jar</code> into <code>.minecraft/mods</code></li>
+      <li>Launch Minecraft with Forge</li>
+    </ol>
+    <p>Need more help? See the <a href="guides/install-1-8-9.html">full install guide</a>.</p>
+  </section>
+
+  <section class="section" id="faq">
+    <h2>FAQ</h2>
+    <div class="card"><strong>Is DSM allowed on Hypixel?</strong><br>Use at your own risk. Widely used in the community, but always review Hypixel’s rules.</div>
+    <div class="card"><strong>Which versions are supported?</strong><br>DSM targets Minecraft 1.8.9 with Forge only.</div>
+    <div class="card"><strong>How do I update?</strong><br>Download the latest JAR and replace the old one in your mods folder.</div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Danker’s Skyblock Mod. Last updated 2025-08-29</p>
+    <p>&copy; 2025 Danker’s Skyblock Mod. Not affiliated with Mojang or Hypixel.</p>
+    <p>Last updated: """ + today + """</p>
   </footer>
 </body>
 </html>
