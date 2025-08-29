@@ -1,88 +1,962 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Danker’s Skyblock Mod (DSM) — Hypixel Skyblock Mod for Minecraft 1.8.9</title>
-  <meta name="description" content="Download and install Danker’s Skyblock Mod (DSM) for Minecraft 1.8.9. Guides, changelog, and FAQs for Hypixel Skyblock players." />
-  <link rel="canonical" href="https://hypicalsb.github.io/DankersSkyblockMod.github.io/" />
-  <meta name="robots" content="index, follow" />
-  <link rel="icon" href="assets/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Danker's Skyblock Mod - Download DSM | Best Hypixel Skyblock Mod 2025</title>
+    <meta name="description" content="Download Danker's Skyblock Mod (DSM) - The ultimate QOL mod for Hypixel Skyblock. Features dungeon solvers, slayer trackers, fishing trackers, and more. Free download for Minecraft 1.8.9 Forge.">
+    <meta name="keywords" content="Danker's Skyblock Mod, DSM, Hypixel Skyblock mod, minecraft mod, skyblock tracker, dungeon solver, slayer tracker, fishing tracker, forge 1.8.9">
+    <meta name="author" content="Hypicalsb">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hypicalsb.github.io/DankersSkyblockMod.github.io/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hypicalsb.github.io/DankersSkyblockMod.github.io/">
+    <meta property="og:title" content="Danker's Skyblock Mod - Best Hypixel Skyblock Mod">
+    <meta property="og:description" content="Download DSM - The ultimate QOL enhancement mod for Hypixel Skyblock with dungeon solvers, trackers, and more!">
+    <meta property="og:image" content="https://hypicalsb.github.io/DankersSkyblockMod.github.io/assets/dsm-banner.png">
 
-  <style>
-    body { margin:0; font-family:system-ui,sans-serif; background:#0f1419; color:#fff; line-height:1.6;}
-    header { background:#1a2332; padding:1rem;}
-    nav ul { display:flex; gap:1rem; list-style:none; margin:0; padding:0; justify-content:center;}
-    nav a { color:#9ae6b4; text-decoration:none; font-weight:600;}
-    nav a:hover { text-decoration:underline;}
-    .hero { text-align:center; padding:4rem 1rem; background:linear-gradient(135deg,#1a2332,#2d3748);}
-    .hero h1 { font-size:2.5rem; color:#4ecdc4;}
-    .hero p { max-width:600px; margin:1rem auto;}
-    .cta a { display:inline-block; margin:1rem; padding:0.75rem 1.25rem; background:#4ecdc4; color:#111; border-radius:999px; font-weight:700; text-decoration:none;}
-    .section { padding:3rem 1rem; max-width:1000px; margin:auto;}
-    .grid { display:grid; gap:1.25rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
-    .card { background:#1a2332; padding:1rem; border-radius:12px;}
-    h2 { color:#ff6b6b; text-align:center; margin-bottom:1rem;}
-    footer { text-align:center; padding:2rem 1rem; border-top:1px solid rgba(255,255,255,.1); opacity:.75;}
-  </style>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hypicalsb.github.io/DankersSkyblockMod.github.io/">
+    <meta property="twitter:title" content="Danker's Skyblock Mod - Best Hypixel Skyblock Mod">
+    <meta property="twitter:description" content="Download DSM - The ultimate QOL enhancement mod for Hypixel Skyblock with dungeon solvers, trackers, and more!">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Danker's Skyblock Mod",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Windows, Mac, Linux",
+        "description": "QOL changes that enhances your Hypixel Skyblock experience with dungeon solvers, trackers, and automation features.",
+        "url": "https://hypicalsb.github.io/DankersSkyblockMod.github.io/",
+        "downloadUrl": "https://github.com/Hypicalsb/Dankers-Skyblock-Mod-v2.3.1/releases",
+        "author": {
+            "@type": "Person",
+            "name": "Hypicalsb"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0a0a0a;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #4CAF50;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu {
+            display: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), #0a0a0a;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #333;
+            transform: translateY(-3px);
+        }
+
+        /* Sections */
+        .section {
+            padding: 80px 0;
+            background: #0a0a0a;
+        }
+
+        .section:nth-child(even) {
+            background: #111111;
+        }
+
+        .section h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: rgba(30, 30, 30, 0.9);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(40, 40, 40, 0.95);
+            box-shadow: 0 20px 40px rgba(76, 175, 80, 0.2);
+            border-color: #4CAF50;
+        }
+
+        .feature-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #4CAF50;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .feature-card p {
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Commands Section */
+        .commands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .command-item {
+            background: rgba(20, 20, 20, 0.8);
+            border-radius: 10px;
+            padding: 1.5rem;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .command-item code {
+            background: rgba(76, 175, 80, 0.2);
+            color: #4CAF50;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .command-item h4 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .command-item p {
+            color: #e0e0e0;
+            font-size: 0.9rem;
+        }
+
+        /* Installation Steps */
+        .install-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .step::before {
+            content: attr(data-step);
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #4CAF50;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .step:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .step h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .step p {
+            color: #e0e0e0;
+        }
+
+        /* Download Section */
+        .download-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .download-card {
+            background: rgba(30, 30, 30, 0.9);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+        }
+
+        .download-card:hover {
+            transform: translateY(-5px);
+            background: rgba(40, 40, 40, 0.95);
+            border-color: #4CAF50;
+            box-shadow: 0 15px 35px rgba(76, 175, 80, 0.2);
+        }
+
+        .download-card .platform {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #4CAF50;
+        }
+
+        .download-card h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .download-card .version {
+            background: rgba(76, 175, 80, 0.2);
+            color: #4CAF50;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 3rem 0 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(76, 175, 80, 0.2);
+            color: #4CAF50;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #4CAF50;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .arrow-down {
+            font-size: 2rem;
+            color: white;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .arrow-down:hover {
+            color: #4CAF50;
+            transform: scale(1.2);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section h2 {
+                font-size: 2rem;
+            }
+
+            .features-grid,
+            .commands-grid,
+            .install-steps,
+            .download-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Loading Animation */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0a0a0a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading-overlay.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid #4CAF50;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#install">Quick Install</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="guides/install-1-8-9.html">Full Install Guide</a></li>
-        <li><a href="changelog.html">Changelog</a></li>
-        <li><a href="#download">Download</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero" id="top">
-    <h1>Danker’s Skyblock Mod (DSM)</h1>
-    <p>The go-to Hypixel Skyblock utility for Minecraft 1.8.9. Clean overlays, QoL helpers, and a fast, lightweight client experience.</p>
-    <div class="cta" id="download">
-      <a href="https://github.com/Hypicalsb/DankersSkyblockMod.github.io/releases/download/v2.3.1/Dankers.Skyblock.Mod-2.3.1.jar" download>
-  📥 Download DSM v2.3.1
-</a>
-      <a href="guides/install-1-8-9.html">📘 Install Guide</a>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
     </div>
-  </section>
 
-  <section class="section" id="features">
-    <h2>Features</h2>
-    <div class="grid">
-      <div class="card"><h3>Performance</h3><p>Optimized to keep FPS high.</p></div>
-      <div class="card"><h3>HUD Overlays</h3><p>Configurable timers and trackers.</p></div>
-      <div class="card"><h3>QoL Tools</h3><p>Inventory helpers, auction & bazaar tools.</p></div>
-      <div class="card"><h3>Forge 1.8.9</h3><p>Built for Minecraft 1.8.9 Forge baseline.</p></div>
-      <div class="card"><h3>Active Updates</h3><p>Regular fixes and improvements.</p></div>
-      <div class="card"><h3>Community-first</h3><p>Trusted by thousands of Skyblock players.</p></div>
-    </div>
-  </section>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">DSM</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#commands">Commands</a></li>
+                    <li><a href="#install">Install</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+                <div class="mobile-menu">☰</div>
+            </nav>
+        </div>
+    </header>
 
-  <section class="section" id="install">
-    <h2>Quick Install</h2>
-    <ol>
-      <li>Install Forge 1.8.9</li>
-      <li>Drop <code>DSM-2.3.1.jar</code> into <code>.minecraft/mods</code></li>
-      <li>Launch Minecraft with Forge</li>
-    </ol>
-    <p>Need more help? See the <a href="guides/install-1-8-9.html">full install guide</a>.</p>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Danker's Skyblock Mod</h1>
+            <p>The Ultimate Quality of Life Enhancement for Hypixel Skyblock</p>
+            <div class="cta-buttons">
+                <a href="#download" class="btn btn-primary">
+                    Download DSM
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    View Features
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="arrow-down">↓</div>
+            </div>
+        </div>
+    </section>
 
-  <section class="section" id="faq">
-    <h2>FAQ</h2>
-    <div class="card"><strong>Is DSM allowed on Hypixel?</strong><br>Use at your own risk. Widely used in the community, but always review Hypixel’s rules.</div>
-    <div class="card"><strong>Which versions are supported?</strong><br>DSM targets Minecraft 1.8.9 with Forge only.</div>
-    <div class="card"><strong>How do I update?</strong><br>Download the latest JAR and replace the old one in your mods folder.</div>
-  </section>
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2>🚀 Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in-up">
+                    <div class="icon">🏰</div>
+                    <h3>Dungeon Solvers</h3>
+                    <p>Advanced puzzle solvers for all dungeon floors (F1-F7) including terminal solvers, Three Weirdos, and Blaze Higher/Lower puzzles.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="icon">⚔️</div>
+                    <h3>Slayer Trackers</h3>
+                    <p>Comprehensive tracking for all slayer types including drops, boss spawns, and profit calculations with detailed statistics.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="icon">🎣</div>
+                    <h3>Fishing Trackers</h3>
+                    <p>Track fishing drops, Jerry fishing events, fishing festivals, spooky fishing, and trophy fish with real-time statistics.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="icon">🔮</div>
+                    <h3>Mythological Tracker</h3>
+                    <p>Monitor mythological event progress, burrow detection, and Diana tracking with accurate spawn predictions.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="icon">📊</div>
+                    <h3>Skill Trackers</h3>
+                    <p>Real-time skill experience tracking with hourly rates, progress bars, and time-to-level calculations for all skills.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="icon">🎯</div>
+                    <h3>Alerts & Notifications</h3>
+                    <p>Customizable alerts for watcher spawns, ability cooldowns, low health/mana warnings, and dungeon events.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="icon">📈</div>
+                    <h3>API Integration</h3>
+                    <p>Check player stats, bank balances, and trophy fish data using Hypixel API integration with detailed player profiles.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="icon">⚙️</div>
+                    <h3>QOL Improvements</h3>
+                    <p>Dozens of quality of life features including reparty commands, ghost block fixes, and customizable GUI elements.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="icon">⛏️</div>
+                    <h3>Powder Tracker</h3>
+                    <p>Track powder gains per hour, HotM tree progression, and mining statistics with detailed analysis tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Danker’s Skyblock Mod. Not affiliated with Mojang or Hypixel.</p>
-    <p>Last updated: """ + today + """</p>
-  </footer>
+    <!-- Commands Section -->
+    <section id="commands" class="section">
+        <div class="container">
+            <h2>⌨️ Commands & Keybinds</h2>
+            <div class="commands-grid">
+                <div class="command-item">
+                    <h4><code>/dsm</code></h4>
+                    <p>Opens the main configuration menu to customize all mod settings and features.</p>
+                </div>
+                <div class="command-item">
+                    <h4><code>/dhelp</code></h4>
+                    <p>Displays a comprehensive list of all available commands and their usage.</p>
+                </div>
+                <div class="command-item">
+                    <h4><code>/loot [boss]</code></h4>
+                    <p>Shows loot tracking statistics for specific bosses or slayers.</p>
+                </div>
+                <div class="command-item">
+                    <h4><code>/reparty</code></h4>
+                    <p>Automatically recreates your party after dungeon runs for seamless gameplay.</p>
+                </div>
+                <div class="command-item">
+                    <h4><code>/hotmof [player]</code></h4>
+                    <p>Uses API to display total powder and HotM tree progression for any player.</p>
+                </div>
+                <div class="command-item">
+                    <h4><code>/trophyfish [player]</code></h4>
+                    <p>Shows detailed trophy fish statistics and collection progress.</p>
+                </div>
+                <div class="command-item">
+                    <h4><code>/bank [player]</code></h4>
+                    <p>Displays bank balance and purse information using API data.</p>
+                </div>
+                <div class="command-item">
+                    <h4><code>/skilltracker [skill]</code></h4>
+                    <p>Toggle skill tracking and view experience rates for specific skills.</p>
+                </div>
+                <div class="command-item">
+                    <h4><code>/lobbyskills</code></h4>
+                    <p>Shows skill levels without joining Skyblock (requires API key).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="install" class="section">
+        <div class="container">
+            <h2>📥 Installation Guide</h2>
+            <div class="install-steps">
+                <div class="step" data-step="1">
+                    <h3>Install Forge 1.8.9</h3>
+                    <p>Download and install Minecraft Forge 1.8.9 from the official Forge website. This is required to run the mod.</p>
+                </div>
+                <div class="step" data-step="2">
+                    <h3>Download DSM</h3>
+                    <p>Get the latest version of Danker's Skyblock Mod from our official GitHub releases page.</p>
+                </div>
+                <div class="step" data-step="3">
+                    <h3>Place in Mods Folder</h3>
+                    <p>Put the downloaded .jar file in your .minecraft/mods folder. Create the folder if it doesn't exist.</p>
+                </div>
+                <div class="step" data-step="4">
+                    <h3>Launch Minecraft</h3>
+                    <p>Start Minecraft with the Forge 1.8.9 profile and join Hypixel Skyblock to begin using DSM!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section">
+        <div class="container">
+            <h2>⬇️ Download DSM</h2>
+            <div class="download-cards">
+                <div class="download-card">
+                    <div class="platform">🖥️</div>
+                    <h3>Latest Release</h3>
+                    <div class="version">v2.1.3</div>
+                    <p>The most stable and feature-complete version of DSM with all the latest updates and bug fixes.</p>
+                    <a href="https://github.com/Hypicalsb/DankersSkyblockMod.github.io/raw/main/Dankers-Skyblock-Mod-2.3.1.jar" class="btn btn-primary" style="margin-top: 1rem;" download>Download Now</a>
+                </div>
+                <div class="download-card">
+                    <div class="platform">🧪</div>
+                    <h3>Beta Releases</h3>
+                    <div class="version">Pre-release</div>
+                    <p>Get early access to new features and improvements. May contain bugs - use at your own risk.</p>
+                    <a href="https://github.com/Hypicalsb/Dankers-Skyblock-Mod-v2.3.1/releases" class="btn btn-secondary" style="margin-top: 1rem;">View All</a>
+                </div>
+                <div class="download-card">
+                    <div class="platform">📱</div>
+                    <h3>Requirements</h3>
+                    <div class="version">Forge 1.8.9</div>
+                    <p>Minecraft 1.8.9 with Forge mod loader. Compatible with OptiFine and most other Skyblock mods.</p>
+                    <a href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.8.9.html" class="btn btn-secondary" style="margin-top: 1rem;">Get Forge</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="section">
+        <div class="container">
+            <h2>🆘 Support & Community</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">💬</div>
+                    <h3>Discord Server</h3>
+                    <p>Join our active Discord community for support, updates, and to connect with other DSM users.</p>
+                    <a href="https://discord.gg/QsEkNQS" class="btn btn-primary" style="margin-top: 1rem;">Join Discord</a>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🐛</div>
+                    <h3>Bug Reports</h3>
+                    <p>Found a bug? Report it on our GitHub issues page to help us improve the mod for everyone.</p>
+                    <a href="https://github.com/Hypicalsb/Dankers-Skyblock-Mod-v2.3.1/issues" class="btn btn-primary" style="margin-top: 1rem;">Report Bug</a>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📚</div>
+                    <h3>Documentation</h3>
+                    <p>Comprehensive guides and documentation for all features, commands, and configuration options.</p>
+                    <a href="https://github.com/Hypicalsb/Dankers-Skyblock-Mod-v2.3.1/wiki" class="btn btn-primary" style="margin-top: 1rem;">View Wiki</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://github.com/Hypicalsb/Dankers-Skyblock-Mod-v2.3.1">GitHub</a>
+                <a href="#support">Support</a>
+                <a href="https://github.com/Hypicalsb/Dankers-Skyblock-Mod-v2.3.1/wiki">Wiki</a>
+                <a href="https://github.com/Hypicalsb/Dankers-Skyblock-Mod-v2.3.1/releases">Releases</a>
+                <a href="https://github.com/Hypicalsb/Dankers-Skyblock-Mod-v2.3.1/issues">Issues</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/Hypicalsb/Dankers-Skyblock-Mod-v2.3.1" title="GitHub">
+                    <span style="font-size: 1.2rem;">🐙</span>
+                </a>
+            </div>
+
+            <p>&copy; 2025 Danker's Skyblock Mod by Hypicalsb. Open source project under MIT License.</p>
+            <p>Not affiliated with Mojang Studios or Hypixel Inc.</p>
+            <p>Made with ❤️ for the Skyblock community</p>
+        </div>
+    </footer>
+
+    <script>
+        // Loading animation
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.getElementById('loadingOverlay').classList.add('fade-out');
+            }, 1000);
+        });
+
+        // Add scroll functionality to arrow
+        document.querySelector('.arrow-down').addEventListener('click', function() {
+            document.querySelector('#features').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background change on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(0, 0, 0, 0.95)';
+            } else {
+                header.style.background = 'rgba(0, 0, 0, 0.9)';
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.feature-card, .command-item, .step, .download-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Add some interactive effects
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px) scale(1.02)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Copy command functionality
+        document.querySelectorAll('.command-item code').forEach(code => {
+            code.style.cursor = 'pointer';
+            code.title = 'Click to copy';
+            
+            code.addEventListener('click', function() {
+                const text = this.textContent;
+                navigator.clipboard.writeText(text).then(() => {
+                    const originalText = this.textContent;
+                    this.textContent = 'Copied!';
+                    this.style.background = 'rgba(76, 175, 80, 0.4)';
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.style.background = 'rgba(76, 175, 80, 0.2)';
+                    }, 2000);
+                });
+            });
+        });
+
+        // Easter egg - Konami code
+        let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
+        let userInput = [];
+
+        document.addEventListener('keydown', function(e) {
+            userInput.push(e.code);
+            
+            if (userInput.length > konamiCode.length) {
+                userInput.shift();
+            }
+            
+            if (JSON.stringify(userInput) === JSON.stringify(konamiCode)) {
+                document.body.style.filter = 'hue-rotate(180deg)';
+                setTimeout(() => {
+                    document.body.style.filter = 'none';
+                }, 5000);
+                
+                const celebration = document.createElement('div');
+                celebration.textContent = '🎉 Konami Code Activated! 🎉';
+                celebration.style.cssText = `
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgba(76, 175, 80, 0.9);
+                    color: white;
+                    padding: 20px;
+                    border-radius: 10px;
+                    font-size: 1.5rem;
+                    z-index: 10000;
+                    animation: fadeInOut 3s ease;
+                `;
+                
+                document.body.appendChild(celebration);
+                setTimeout(() => celebration.remove(), 3000);
+                
+                userInput = [];
+            }
+        });
+
+        // Add CSS for fadeInOut animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInOut {
+                0%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+                50% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 </body>
 </html>
