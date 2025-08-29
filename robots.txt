@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hypicalsb.github.io/DankersSkyblockMod.github.io/sitemap.xml
